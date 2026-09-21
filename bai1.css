@@ -24,3 +24,9 @@
 .kho1, .kho3{
     color: #0033CC;
 }
+hr{
+    border: none;
+    border-top: 1px solid #0033CC;
+    width: 55%;
+    margin: 20px auto;
+}
