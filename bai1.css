@@ -1,1 +1,16 @@
-
+.khungbai{
+    background-color: #FFFDE7;
+    border: 1px solid #9E9E9E;
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+}
+.tieude{
+    color:#D40000 ;
+    background-color: #FFD9E6;
+    font-weight: bold;
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+}
