@@ -2,7 +2,15 @@
     background:  #A8861B;
     color: #FFFFFF;
     width: 80%;
-    margin: 30px ;
+    margin: 30px auto;
     padding: 30px;
+    display: inline-block;
+}
+.trichdan{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 25px;
 
 }
+.
