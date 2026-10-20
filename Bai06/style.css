@@ -1,0 +1,55 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #FFFFFF;
+}
+
+.khung {
+  width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FBF1DC;
+}
+
+h1 {
+  color: #E65100;
+  text-align: center;
+  margin-top: 0;
+}
+
+.noi-dung {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+img {
+  width: 160px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #E65100;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-bottom: 1px solid #E0D6C2;
+}
+
+tr:nth-child(odd) td {
+  background-color: #FDF8EF;
+}
+
+.stt {
+  width: 50px;
+  text-align: center;
+}
