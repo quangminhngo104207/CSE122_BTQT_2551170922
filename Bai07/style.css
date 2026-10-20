@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: #EEF1F4;
+}
+
+/* Khung chung, nằm giữa trang */
+.khung {
+  width: 680px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Dải tiêu đề: nền đỏ, chữ trắng, căn giữa */
+.dai-tieu-de {
+  background-color: #C8102E;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px;
+}
+
+.dai-tieu-de h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Dải phụ: nền hồng nhạt, chữ đỏ in đậm, căn giữa */
+.dai-phu {
+  background-color: #FBE3E8;
+  color: #C8102E;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Cột phải: nổi bên phải, có vạch phân cách dọc bên trái */
+.cot-phai {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 15px 18px 15px 15px;
+  border-left: 1px solid #CCCCCC;
+}
+
+/* Ảnh nổi góc phải trên */
+.cot-phai img {
+  float: right;
+  width: 145px;
+  margin-left: 12px;
+}
+
+/* Cột trái: clear để nằm dưới cột phải */
+.cot-trai {
+  clear: both;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 15px 0 15px 18px;
+}
+
+/* Tiêu đề mục: chữ đỏ */
+h2 {
+  color: #C8102E;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+/* Danh sách: chữ #333333 */
+ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.6;
+}
