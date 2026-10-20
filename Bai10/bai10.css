@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    background: #eef2f7;
+    font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+    color: #0f172a;
+}
+
+.card {
+    max-width: 1180px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15, 118, 110, .16);
+}
+
+.card-head {
+    padding: 28px 34px;
+    background: #0f766e;
+    color: #fff;
+}
+
+.card-head h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.card-head p {
+    margin: 10px 0 0;
+    font-size: 17px;
+    opacity: .95;
+}
+
+.card-body {
+    padding: 30px 34px 36px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 26px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #334155;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 17px;
+    color: #0f172a;
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, .15);
+}
+
+.consent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.consent label {
+    margin: 0;
+    font-weight: 400;
+}
+
+.consent input {
+    width: 20px;
+    height: 20px;
+    accent-color: #0f766e;
+}
+
+.actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 6px;
+}
+
+button {
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-send {
+    background: #0f766e;
+    color: #fff;
+}
+
+.btn-send:hover {
+    background: #0c6159;
+}
+
+.btn-reset {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-reset:hover {
+    background: #d2dbe7;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    .card-head {
+        padding: 22px 20px;
+    }
+
+    .card-head h1 {
+        font-size: 24px;
+    }
+
+    .card-body {
+        padding: 22px 20px 26px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+    }
+
+    button {
+        flex: 1 1 auto;
+    }
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: #e9ecef;
+    min-height: 100vh;
+}
+
+.card {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.card-header h1 {
+    letter-spacing: .5px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #75b798;
+    box-shadow: 0 0 0 .2rem rgba(25, 135, 84, .15);
+}
+
+.form-check-label {
+    color: #495057;
+}
+
+@media (max-width: 575.98px) {
+    .card-header h1 {
+        font-size: 1.35rem;
+    }
+}

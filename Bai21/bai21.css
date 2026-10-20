@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+    color: #222;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr 170px;
+    grid-template-areas:
+        "banner banner banner"
+        "menu content ads";
+    min-height: 100vh;
+}
+
+.banner {
+    grid-area: banner;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 22px;
+    background:
+        linear-gradient(rgba(198, 40, 40, .93), rgba(142, 0, 0, .93)),
+        url("Nen_banner.jpg") center / cover no-repeat;
+    color: #fff;
+}
+
+.banner img {
+    width: 46px;
+    height: 46px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 26px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .4);
+}
+
+.menu {
+    grid-area: menu;
+    padding-top: 8px;
+    background: linear-gradient(#C62828, #8E0000);
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.menu a {
+    display: block;
+    padding: 14px 16px;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+.content {
+    grid-area: content;
+    padding: 26px 28px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.content h2 {
+    margin: 0 0 20px;
+    font-size: 26px;
+    color: #C62828;
+}
+
+.submenu-box {
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: #FFE082;
+}
+
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+.submenu li::before {
+    content: "\2022";
+    margin-right: 9px;
+    font-weight: 700;
+}
+
+.submenu a {
+    color: #111;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+}
+
+.topic {
+    margin-top: 24px;
+    padding: 24px 28px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    min-height: 160px;
+    font-size: 17px;
+}
+
+.topic p {
+    margin: 0 0 16px;
+}
+
+.topic p:last-child {
+    margin-bottom: 0;
+}
+
+.center {
+    text-align: center;
+    line-height: 1.7;
+}
+
+.ads {
+    grid-area: ads;
+    padding: 16px 12px;
+    background: #fff;
+}
+
+.ads a {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.ads img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "banner"
+            "menu"
+            "content"
+            "ads";
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        border-bottom: 0;
+    }
+
+    .menu a {
+        padding: 10px 14px;
+    }
+
+    .content {
+        padding: 20px 16px;
+    }
+
+    .ads {
+        display: flex;
+        gap: 12px;
+    }
+
+    .ads a {
+        flex: 1;
+    }
+}

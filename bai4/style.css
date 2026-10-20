@@ -1,0 +1,100 @@
+/* ===== BÀI 7: Trang khuyến mãi sản phẩm =====
+   Ý tưởng: dải tiêu đề đỏ + dải phụ hồng,
+   thân bài 2 cột với vạch phân cách dọc ở giữa,
+   tiêu đề mục màu đỏ kèm ký hiệu □,
+   ảnh sản phẩm nổi góc phải trên. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 24px 16px;
+}
+
+.trang {
+  max-width: 960px;
+  margin: 0 auto;
+  /* border nhẹ bao quanh cho giống tờ quảng cáo */
+  border: 1px solid #f0c4ce;
+  border-radius: 10px;
+  overflow: hidden; /* ẩn phần ảnh tràn ra ngoài bo góc */
+}
+
+/* Dải tiêu đề chính: nền đỏ #C8102E, chữ trắng căn giữa */
+.dai-tieu-de {
+  background-color: #c8102e;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 16px;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Dải phụ: nền hồng nhạt, chữ đỏ in đậm căn giữa */
+.dai-phu {
+  background-color: #fbe3e8;
+  color: #c8102e;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Ảnh sản phẩm nổi góc phải trên */
+.anh-san-pham {
+  float: right;
+  width: 240px;
+  max-width: 40%;
+  margin: 0 20px 12px 20px;
+  border-radius: 8px;
+  border: 3px solid #fbe3e8;
+}
+
+/* Thân bài 2 cột, vạch phân cách dọc ở giữa:
+   column-count:2 chia nội dung thành 2 cột,
+   column-rule vẽ đường kẻ dọc giữa 2 cột. */
+.hai-cot {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 2px solid #f0c4ce;
+  padding: 8px 24px 24px;
+}
+
+/* Mục: tránh bị cắt giữa hai cột */
+.muc {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+/* Tiêu đề mục: màu đỏ */
+.tieu-de-muc {
+  color: #c8102e;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.danh-sach {
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #333333;
+}
+
+/* Responsive: màn hình nhỏ thì gộp về 1 cột, bỏ vạch chia */
+@media (max-width: 640px) {
+  .hai-cot { column-count: 1; column-rule: none; }
+  .anh-san-pham {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 16px;
+  }
+}

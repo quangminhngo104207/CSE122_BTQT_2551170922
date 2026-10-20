@@ -1,0 +1,50 @@
+body {
+    background-color: #f5f6f8;
+}
+
+h1 {
+    letter-spacing: 1px;
+}
+
+.card {
+    border: 1px solid #e6e8ec;
+    border-radius: 12px;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .12) !important;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.modal-content,
+.accordion {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.accordion-body {
+    color: #495057;
+}

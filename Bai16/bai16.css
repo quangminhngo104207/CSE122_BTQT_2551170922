@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 14px;
+    background: #eceef4;
+    font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+    color: #1f2937;
+}
+
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .14);
+}
+
+.app-head {
+    padding: 24px 26px;
+    background: #6d28d9;
+    color: #fff;
+}
+
+.app-head h1 {
+    margin: 0 0 8px;
+    font-size: 25px;
+}
+
+.app-head p {
+    margin: 0;
+    font-size: 15px;
+    opacity: .92;
+}
+
+.app-body {
+    padding: 24px 26px 28px;
+}
+
+.add-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececef;
+}
+
+.add-bar input {
+    flex: 1 1 220px;
+    padding: 13px 16px;
+    border: 1px solid #a78bfa;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.add-bar input:focus {
+    outline: none;
+    border-color: #6d28d9;
+    box-shadow: 0 0 0 3px rgba(109, 40, 217, .14);
+}
+
+.add-bar button {
+    padding: 13px 24px;
+    border: 0;
+    border-radius: 12px;
+    background: #6d28d9;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-bar button:hover {
+    background: #5a1fb4;
+}
+
+.tasks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 2px;
+    border-bottom: 1px dashed #dcdce2;
+}
+
+.box {
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    border: 2px solid #a78bfa;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.box:checked {
+    border-color: #6d28d9;
+    background: #6d28d9;
+}
+
+.text {
+    flex: 1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task.done .text {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.del {
+    padding: 9px 18px;
+    border: 0;
+    border-radius: 9px;
+    background: #fde2e2;
+    font-family: inherit;
+    font-size: 15px;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+.del:hover {
+    background: #f8cccc;
+}
+
+.count {
+    margin: 18px 0 0;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+@media (max-width: 420px) {
+    .app-body {
+        padding: 18px 16px 22px;
+    }
+
+    .app-head {
+        padding: 20px 16px;
+    }
+}

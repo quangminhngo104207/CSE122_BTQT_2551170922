@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 16px;
+    background: linear-gradient(#eef2f7, #dfe6f0);
+    font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+    color: #333;
+}
+
+.cv {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(21, 101, 192, .18);
+}
+
+.cv-left {
+    padding: 36px 24px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(160deg, #1565C0, #0d3f7a);
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: #fff;
+    color: #1565C0;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 130px;
+}
+
+.cv-left h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.role {
+    margin: 8px 0 28px;
+    font-size: 15px;
+    opacity: .9;
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+}
+
+.contact li {
+    margin: 14px 0;
+}
+
+.ico {
+    display: inline-block;
+    width: 26px;
+    font-size: 16px;
+}
+
+.cv-right {
+    padding: 32px 36px;
+}
+
+.cv-right section + section {
+    margin-top: 28px;
+}
+
+.cv-right h2 {
+    margin: 0 0 14px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #dbe3ee;
+    color: #1565C0;
+    font-size: 20px;
+}
+
+.cv-right p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills li {
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: #e3f0ff;
+    color: #0d3f7a;
+    font-size: 14px;
+}
+
+.links a {
+    color: #1565C0;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 18px 10px;
+    }
+
+    .cv {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-right {
+        padding: 24px 20px;
+    }
+}

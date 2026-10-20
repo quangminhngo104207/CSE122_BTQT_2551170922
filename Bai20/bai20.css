@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    min-height: 100vh;
+    background: #14181c;
+    font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+    color: #fff;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.stage {
+    width: 100%;
+    max-width: 560px;
+    padding: 26px;
+    border-radius: 12px;
+    background: #1c2226;
+    text-align: center;
+}
+
+#photo {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: filter .35s ease, transform .35s ease;
+}
+
+.caption {
+    margin: 20px 0 0;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f9e79f, #c9a227);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 820px;
+}
+
+.toolbar button {
+    padding: 12px 20px;
+    border: 1px solid #3a444c;
+    border-radius: 8px;
+    background: #232b30;
+    font-family: inherit;
+    font-size: 17px;
+    color: #e5e7eb;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+}
+
+.toolbar button:hover {
+    background: #2e3941;
+}
+
+.toolbar button.active {
+    border-color: #0d6efd;
+    background: #0d6efd;
+    color: #fff;
+}
+
+.fx-gray {
+    filter: grayscale(1);
+}
+
+.fx-xray {
+    filter: grayscale(1) invert(1) contrast(1.7);
+}
+
+.fx-invert {
+    filter: invert(1);
+}
+
+.fx-fliph {
+    filter: grayscale(1);
+    transform: scaleX(-1);
+}
+
+.fx-flipv {
+    filter: grayscale(1);
+    transform: scaleY(-1);
+}
+
+.fx-glow {
+    filter: grayscale(1) drop-shadow(0 0 14px rgba(255, 255, 255, .85));
+}
+
+.fx-shadow {
+    filter: grayscale(1) drop-shadow(8px 8px 6px rgba(0, 0, 0, .65));
+}
+
+.fx-boldshadow {
+    filter: grayscale(1) drop-shadow(3px 3px 0 #000) drop-shadow(7px 7px 0 rgba(0, 0, 0, .45));
+}
+
+.fx-dropshadow {
+    filter: grayscale(1) drop-shadow(14px 14px 12px rgba(0, 0, 0, .75));
+}
+
+.fx-blur {
+    filter: grayscale(1) blur(3px);
+}
+
+.fx-wave {
+    filter: grayscale(1) url(#wave);
+}
+
+.fx-mask {
+    filter: grayscale(1) contrast(2.6) brightness(1.5);
+}
+
+.fx-alpha {
+    filter: grayscale(1) opacity(.4);
+}
+
+.defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+@media (max-width: 520px) {
+    .stage {
+        padding: 16px;
+    }
+
+    .caption {
+        font-size: 26px;
+    }
+
+    .toolbar button {
+        padding: 9px 14px;
+        font-size: 15px;
+    }
+}

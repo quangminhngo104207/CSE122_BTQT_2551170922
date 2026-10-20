@@ -1,0 +1,43 @@
+body {
+    background-color: #f5f6f8;
+}
+
+h1 {
+    color: #212529;
+}
+
+.table-responsive {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table {
+    font-size: 1.05rem;
+}
+
+.table thead th {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    font-weight: 700;
+}
+
+.table tbody th,
+.table tbody td {
+    color: #212529;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e7f1ff;
+}
+
+.pagination .page-link {
+    color: #0d6efd;
+    min-width: 44px;
+    text-align: center;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chế độ Sáng / Tối</title>
+    <link rel="stylesheet" href="bai22.css">
+</head>
+<body class="toi">
+<div class="page">
+    <header class="head">
+        <h1>Chế độ Tối / Sáng</h1>
+        <button type="button" class="switch" id="btnToggle" role="switch" aria-checked="true">
+            <span class="knob"></span>
+        </button>
+    </header>
+
+    <main class="cards">
+        <section class="card">
+            <h2>Biến CSS (CSS Variables)</h2>
+            <p>Toàn bộ màu sắc được khai báo trong <code>:root</code> và ghi đè bằng class <code>.toi</code>.</p>
+        </section>
+
+        <section class="card">
+            <h2>Chuyển đổi bằng JavaScript</h2>
+            <p>Nút gạt thêm/bỏ class <code>.toi</code> trên <code>&lt;body&gt;</code> &mdash; mọi thành phần tự đổi màu.</p>
+        </section>
+
+        <section class="card">
+            <h2>Chuyển màu mượt</h2>
+            <p>Dùng <code>transition</code> để màu nền và chữ chuyển dần, không bị giật.</p>
+        </section>
+    </main>
+
+    <footer class="note" id="note">Đây là giao diện ở chế độ TỐI (đang bật).</footer>
+</div>
+
+<script src="bai22.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá điểm đến</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bai28.css">
+</head>
+<body>
+<main class="container py-4">
+    <h1 class="text-center text-primary fw-bold mb-4">Khám phá điểm đến</h1>
+
+    <div id="carouselDiemDen" class="carousel slide shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDiemDen" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vịnh Hạ Long"></button>
+            <button type="button" data-bs-target="#carouselDiemDen" data-bs-slide-to="1" aria-label="Hang Sơn Đoòng"></button>
+            <button type="button" data-bs-target="#carouselDiemDen" data-bs-slide-to="2" aria-label="Thác Bản Giốc"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="1-vinh-ha-long.jpg" class="d-block w-100" alt="Vịnh Hạ Long">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="h3 mb-1">Vịnh Hạ Long</h2>
+                    <p class="mb-0">Di sản thiên nhiên thế giới</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="2-son-doong.jpg" class="d-block w-100" alt="Hang Sơn Đoòng">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="h3 mb-1">Hang Sơn Đoòng</h2>
+                    <p class="mb-0">Hang động lớn nhất thế giới</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="3-thac-ban-gioc.jpg" class="d-block w-100" alt="Thác Bản Giốc">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="h3 mb-1">Thác Bản Giốc</h2>
+                    <p class="mb-0">Thác nước đẹp nhất Đông Nam Á</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiemDen" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Trước</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDiemDen" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Tiếp</span>
+        </button>
+    </div>
+
+    <ul class="nav nav-pills justify-content-center mt-4 mb-3" id="bangTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-gioi-thieu" data-bs-toggle="pill" data-bs-target="#noi-dung-1" type="button" role="tab" aria-controls="noi-dung-1" aria-selected="true">Giới thiệu</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-lich-trinh" data-bs-toggle="pill" data-bs-target="#noi-dung-2" type="button" role="tab" aria-controls="noi-dung-2" aria-selected="false">Lịch trình</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-chi-phi" data-bs-toggle="pill" data-bs-target="#noi-dung-3" type="button" role="tab" aria-controls="noi-dung-3" aria-selected="false">Chi phí</button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="noi-dung-1" role="tabpanel" tabindex="0" aria-labelledby="tab-gioi-thieu">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="mb-0">Tour 3 ngày 2 đêm khám phá các danh thắng miền Bắc, khởi hành hằng tuần.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="noi-dung-2" role="tabpanel" tabindex="0" aria-labelledby="tab-lich-trinh">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <ul class="mb-0 ps-3">
+                        <li>Ngày 1: Hà Nội - Vịnh Hạ Long, nghỉ đêm trên tàu.</li>
+                        <li>Ngày 2: Hang Sơn Đoòng - Động Phong Nha.</li>
+                        <li>Ngày 3: Thác Bản Giốc - trở về Hà Nội.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="noi-dung-3" role="tabpanel" tabindex="0" aria-labelledby="tab-chi-phi">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <p class="mb-2">Giá tour trọn gói: 4.990.000 đồng một khách.</p>
+                    <p class="mb-0">Đã gồm xe, khách sạn, vé tham quan và hướng dẫn viên; chưa gồm chi phí cá nhân.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

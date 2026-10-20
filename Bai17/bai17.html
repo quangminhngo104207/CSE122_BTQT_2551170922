@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="bai17.css">
+</head>
+<body>
+<main class="card">
+    <header class="card-head">
+        <h1>Đăng ký tài khoản</h1>
+        <p>Dữ liệu được kiểm tra bằng Javascript trước khi gửi.</p>
+    </header>
+
+    <form id="formDangKy" novalidate>
+        <div class="field">
+            <label for="hoten">Họ và tên</label>
+            <input type="text" id="hoten" name="hoten" value="Nguyễn Văn An">
+            <p class="msg" id="hotenMsg"></p>
+        </div>
+
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="an.nv@">
+            <p class="msg" id="emailMsg"></p>
+        </div>
+
+        <div class="field">
+            <label for="matkhau">Mật khẩu</label>
+            <input type="password" id="matkhau" name="matkhau" value="abc">
+            <p class="msg" id="matkhauMsg"></p>
+        </div>
+
+        <div class="field">
+            <label for="xacnhan">Xác nhận mật khẩu</label>
+            <input type="password" id="xacnhan" name="xacnhan" value="abcdef">
+            <p class="msg" id="xacnhanMsg"></p>
+        </div>
+
+        <button type="submit" class="submit">Đăng ký</button>
+    </form>
+</main>
+
+<script src="bai17.js"></script>
+</body>
+</html>

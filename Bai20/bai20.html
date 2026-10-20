@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng ảnh với CSS Filter</title>
+    <link rel="stylesheet" href="bai20.css">
+</head>
+<body>
+<main class="page">
+    <section class="stage">
+        <img id="photo" class="fx-gray" src="hoahong.gif" alt="Hoa hồng">
+        <p class="caption">Special For You</p>
+    </section>
+
+    <nav class="toolbar" id="toolbar">
+        <button type="button" class="active" data-fx="gray">Gray</button>
+        <button type="button" data-fx="xray">Xray</button>
+        <button type="button" data-fx="invert">Invert</button>
+        <button type="button" data-fx="fliph">FlipH</button>
+        <button type="button" data-fx="flipv">FlipV</button>
+        <button type="button" data-fx="glow">Glow</button>
+        <button type="button" data-fx="shadow">Shadow</button>
+        <button type="button" data-fx="boldshadow">Bold Shadow</button>
+        <button type="button" data-fx="dropshadow">DropShadow</button>
+        <button type="button" data-fx="blur">Blur</button>
+        <button type="button" data-fx="wave">Wave</button>
+        <button type="button" data-fx="mask">Mask</button>
+        <button type="button" data-fx="alpha">Alpha</button>
+    </nav>
+</main>
+
+<svg class="defs" width="0" height="0" aria-hidden="true">
+    <filter id="wave">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.06" numOctaves="2" seed="7" result="noise"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="28" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+    </filter>
+</svg>
+
+<script src="bai20.js"></script>
+</body>
+</html>

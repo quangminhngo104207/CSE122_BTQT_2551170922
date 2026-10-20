@@ -1,0 +1,19 @@
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+}
+
+@media (max-width: 767.98px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
